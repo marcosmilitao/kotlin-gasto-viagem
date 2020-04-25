@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/editDistancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:inputType="number"
+        android:hint="@string/distancia"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/total_de_quilometros"/>
+
+    <EditText
+        android:id="@+id/editPreco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/preco"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/preco_por_litro"/>
+
+    <EditText
+        android:id="@+id/editAutonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/autonomia"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/quilometro_por_litro"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:text="@string/gasto_total"/>
+
+    <TextView
+        android:id="@+id/textTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="28dp"
+
+        android:layout_gravity="center"
+        android:text="R$ 0"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="#74CC97"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:text="@string/calcular"/>
+
+</LinearLayout>
